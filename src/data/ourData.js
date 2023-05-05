@@ -1,3 +1,7 @@
+import racer from "../images/racer.png";
+import man from "../images/man.png";
+import bigfix from "../images/bigfix.jpg";
+
 export const clients = [
     {
         
@@ -132,4 +136,23 @@ export const products = [
         desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed itaque tempore consectetur quis iusto laudantium!"
     },
 
+]
+
+export const events = [
+    {
+        type: "Insight",
+        title: "HCLSoftware begins partnership with Ferrari",
+        image : racer,
+    },
+
+        {
+        type: "Insight",
+        title: "Our journey and a way forword to 2023",
+        image : man,
+    },
+        {
+        type: "Insight",
+        title: "BigFix on cloud accelerates the Time.",
+        image : bigfix,
+    }
 ]

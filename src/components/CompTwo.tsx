@@ -3,7 +3,7 @@ import { AiOutlineLock, AiOutlineRadarChart } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { SiDatabricks } from "react-icons/si";
 import { GiSandsOfTime } from "react-icons/gi";
-import { clients, products } from "../data/ourData";
+import { clients, events, products } from "../data/ourData";
 
 type Props = {};
 
@@ -15,6 +15,12 @@ type Client = {
 type Product = {
   title: string;
   desc: string;
+};
+
+type Event = {
+  type: string;
+  title: string;
+  image: string;
 };
 
 const CompTwo = (props: Props) => {
@@ -211,12 +217,15 @@ const CompTwo = (props: Props) => {
               return (
                 <div
                   key={i}
-                  className="bg-white text-gray-800 p-5 rounded-lg  hover:bg-gradient-to-br hover:from-cyan-200 hover:via-cyan-100 hover:to-cyan-500 flex flex-col justify-start items-start"
+                  className="group bg-white text-gray-800 p-5 rounded-lg  hover:bg-gradient-to-br hover:from-cyan-200 hover:via-cyan-100 hover:to-cyan-500 flex flex-col justify-start items-start"
                 >
                   <h3 className="text-xl font-bold">{product.title}</h3>
                   <p className="text-gray-700 text-lg">{product.desc}</p>
                   <span className="text-lg flex flex-row justify-center items-center space-x-2">
-                    <span>Learn More</span> <BsArrowRight />
+                    <span className="">Learn More</span>{" "}
+                    <span className=" inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                      <BsArrowRight />
+                    </span>
                   </span>
                 </div>
               );
@@ -227,6 +236,37 @@ const CompTwo = (props: Props) => {
           <h2 className="text-white font-bold text-base underline text-right px-0 py-10 lg:px-0 lg:py-12">
             See all products
           </h2>
+        </div>
+      </div>
+
+      {/* Insights and Events */}
+
+      <div className="bg-gray-200 pt-5 pb-10">
+        <div className="container mx-auto">
+          <h2 className="text-gray-700 font-bold text-xl lg:text-3xl text-left px-5 py-10 lg:px-14 lg:py-10">
+            Insights and Events
+          </h2>
+
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 mx-5 lg:mx-14 pb-10 lg:pb-10">
+            {events.map((event: Event, i) => {
+              return (
+                <div
+                  key={i}
+                  className=" group flex flex-col justify-start items-start space-y-3 pb-5 rounded-b-sm bg-white hover:bg-gray-300"
+                >
+                  <img className="h-52 w-full lg:h-52 rounded-t-lg  " src={event.image} alt={event.title} />
+                  <span  className="text-sm indent-3 ">{event.type}</span>
+                  <span className="text-lg indent-3  ">{event.title}</span>
+                  <span className="text-sm indent-3  flex flex-row justify-center items-center space-x-2">
+                    <span className="">Learn More</span>{" "}
+                    <span className=" inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                      <BsArrowRight />
+                    </span>
+                  </span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 
@@ -246,18 +286,34 @@ const CompTwo = (props: Props) => {
                 provident blanditiis maiores, possimus ex illum, adipisci atque
                 distinctio molestias quis error dignissimos. Debitis.
               </p>
-              <button className="bg-emerald-800 hover:bg-emerald-900 p-2 text-white rounded-lg flex flex-row justify-center items-center space-x-2"><span>Find Out More</span> <BsArrowRight/></button>
+              <button className="bg-emerald-800 hover:bg-emerald-900 p-2 text-white font-bold rounded-lg flex flex-row justify-center items-center space-x-2 group">
+                <span>Find Out More</span>{" "}
+                <span className="group-hover:transition-transform group-hover:translate-x-1">
+                  <BsArrowRight />
+                </span>
+              </button>
             </div>
-            <img className="" src="https://www.hcltechsw.com/wps/wcm/connect/79208fb8-0a37-46bd-b53f-73c6c5dacef4/careers-img.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-79208fb8-0a37-46bd-b53f-73c6c5dacef4-ogYiHIU" alt="hcl" />
+            <img
+              className=""
+              src="https://www.hcltechsw.com/wps/wcm/connect/79208fb8-0a37-46bd-b53f-73c6c5dacef4/careers-img.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-79208fb8-0a37-46bd-b53f-73c6c5dacef4-ogYiHIU"
+              alt="hcl"
+            />
           </div>
         </div>
       </div>
 
       {/* HCL Software */}
-      <div className="bg-gradient-to-r from-cyan-400 via-blue-900 to-blue-500">
-        <div className="container mx-auto flex flex-col lg:flex-row justify-center  lg:justify-evenly items-center ">
-          <span className="text-white text-4xl font-extrabold">HCLSoftware</span>
-          <button className="bg-white hover:bg-cyan-200 text-black p-2 ">Contact Us</button>
+      <div className="bg-gradient-to-r from-cyan-400 via-blue-950 to-blue-500 py-10">
+        <div className="container mx-auto flex flex-col lg:flex-row justify-center  lg:justify-around items-center space-x-0 lg:space-x-96 space-y-3 lg:space-y-0 ">
+          <span className="text-white text-4xl font-extrabold">
+            HCLSoftware
+          </span>
+          <button className="bg-white text-xl font-bold text-emerald-700 hover:bg-cyan-200  p-2 rounded-lg flex flex-row justify-center items-center space-x-3 group">
+            <span>Contact Us</span>{" "}
+            <span className="group-hover:transition-transform group-hover:translate-x-1">
+              <BsArrowRight />
+            </span>
+          </button>
         </div>
       </div>
     </>
