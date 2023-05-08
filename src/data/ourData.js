@@ -1,11 +1,25 @@
 import racer from "../images/racer.png";
 import man from "../images/man.png";
 import bigfix from "../images/bigfix.jpg";
+import one from "../images/one.png";
+import two from "../images/two.png";
+import three from "../images/three.png";
+import four from "../images/four.png";
+import five from "../images/five.png";
+import six from "../images/six.png";
+import seven from "../images/seven.png";
+import eight from "../images/eight.png";
+import nine from "../images/nine.png";
+import ten from "../images/ten.png";
+import eleven from "../images/eleven.png";
+import twelve from "../images/twelve.png";
+
 
 export const clients = [
     {
         
         name: 'Client 1',
+        img: one,
         email: 'clientOne@example.com',
         
     },
@@ -13,6 +27,7 @@ export const clients = [
     {
         
         name: 'Client 2',
+         img: two,
         email: 'clientTwo@example.com',
        
     },
@@ -20,6 +35,7 @@ export const clients = [
     {
         
         name: 'Client 3',
+         img: three,
         email: 'clientThree@example.com',
        
     },
@@ -27,6 +43,7 @@ export const clients = [
     {
         
         name: 'Client 4',
+         img: four,
         email: 'clientFour@example.com',
         
     },
@@ -34,6 +51,7 @@ export const clients = [
     {
         
         name: 'Client 5',
+         img: five,
         email: 'clientFive@example.com',
        
     },
@@ -41,12 +59,14 @@ export const clients = [
     {
         
         name: 'Client 6',
+         img: six,
         email: 'clientSix@example.com',
        
     },
     {
         
         name: 'Client 7',
+         img: seven,
         email: 'clientSeven@example.com',
         
     },
@@ -54,6 +74,7 @@ export const clients = [
     {
         
         name: 'Client 8',
+         img: eight,
         email: 'clientEight@example.com',
       
     },
@@ -61,12 +82,14 @@ export const clients = [
     {
         
         name: 'Client 9',
+         img: nine,
         email: 'clientNine@example.com',
        
     },
     {
         
         name: 'Client 10',
+         img: ten,
         email: 'clientTen@example.com',
         
     },
@@ -74,6 +97,7 @@ export const clients = [
     {
         
         name: 'Client 11',
+         img: eleven,
         email: 'clientEleven@example.com',
        
     },
@@ -81,6 +105,7 @@ export const clients = [
     {
         
         name: 'Client 12',
+         img: twelve,
         email: 'clientTwelve@example.com',
       
     },

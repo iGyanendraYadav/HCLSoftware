@@ -9,6 +9,7 @@ type Props = {};
 
 type Client = {
   name: string;
+  img: string;
   email: string;
 };
 
@@ -191,15 +192,15 @@ const CompTwo = (props: Props) => {
             Our Clients
           </h2>
 
-          <div className="grid grid-cols-2 lg:grid-cols-6 gap-5 lg:gap-5 mx-5 lg:mx-16 my-5">
+          <div className="flex flex-row flex-wrap justify-evenly lg:justify-center items-center space lg:space-x-12 mx-5 lg:mx-16 my-5">
             {clients.map((client: Client) => {
               return (
-                <span
+                <div
                   className="uppercase text-2xl text-gray-700 font-bold"
                   key={client.email}
                 >
-                  {client.name}
-                </span>
+                  <img className="items-center" src={client.img} alt={client.name} />
+                </div>
               );
             })}
           </div>
