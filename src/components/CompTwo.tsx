@@ -1,9 +1,10 @@
 import React from "react";
 import { AiOutlineLock, AiOutlineRadarChart } from "react-icons/ai";
+import { FaStarHalf, FaStar } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import { SiDatabricks } from "react-icons/si";
 import { GiSandsOfTime } from "react-icons/gi";
-import { clients, events, products } from "../data/ourData";
+import { clients, events, peerReview, products } from "../data/ourData";
 
 type Props = {};
 
@@ -23,6 +24,11 @@ type Event = {
   title: string;
   image: string;
 };
+
+type PR = {
+  name: string;
+  img: string;
+}
 
 const CompTwo = (props: Props) => {
   return (
@@ -203,6 +209,34 @@ const CompTwo = (props: Props) => {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </div>
+
+      {/* Peer Review */}
+
+      <div className="bg-gray-200 py-5">
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-20">
+            <div className="flex flex-row justify-start items-center text-yellow-500 space-x-1 pb-5 lg:pb-0">
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStarHalf/>
+                <span className="text-gray-800">Peer reviewed by our customers on</span>
+            </div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-2 items-center">
+                {
+                  peerReview.map((pr : PR) => {
+                    return (
+                    
+                        <img className="" src={pr.img} key={pr.name} alt={pr.name} />
+                     
+                    )
+                  })
+                }
+            </div>
           </div>
         </div>
       </div>

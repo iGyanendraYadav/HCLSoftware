@@ -13,6 +13,10 @@ import nine from "../images/nine.png";
 import ten from "../images/ten.png";
 import eleven from "../images/eleven.png";
 import twelve from "../images/twelve.png";
+import icon1 from "../images/icon1.png";
+import icon2 from "../images/icon2.png";
+import icon3 from "../images/icon3.png";
+import icon4 from "../images/icon4.png";
 
 
 export const clients = [
@@ -185,6 +189,7 @@ export const events = [
 export const accordionData = [
     {
       title: "Section 1",
+      index: 1,
       content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
       laborum cupiditate possimus labore, hic temporibus velit dicta earum
       suscipit commodi eum enim atque at? Et perspiciatis dolore iure
@@ -192,6 +197,7 @@ export const accordionData = [
     },
     {
       title: "Section 2",
+      index: 2,
       content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
       reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
       quaerat iure quos dolorum accusantium ducimus in illum vero commodi
@@ -201,9 +207,31 @@ export const accordionData = [
     },
     {
       title: "Section 3",
+      index: 3,
       content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
       quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
       dolor ut sequi minus iste? Quas?`,
     },
   ];
+
+  export const peerReview = [
+    {
+        name: "Icon1",
+        img: icon1,
+    },
+
+    
+    {
+        name: "Icon2",
+        img: icon2,
+    },
+    {
+        name: "Icon3",
+        img: icon3,
+    },
+    {
+        name: "Icon4",
+        img: icon4,
+    },
+  ]
 
