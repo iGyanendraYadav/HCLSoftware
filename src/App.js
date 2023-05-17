@@ -5,6 +5,7 @@ import Dummy from "./components/Dummy.tsx";
 import Awards from "./components/Awards.tsx";
 import { accordionData  } from "./data/ourData.js";
 import ScrollToTop from "./components/ScrollToTop.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
 
@@ -34,6 +35,11 @@ function App() {
           </div>
         </div>
       </div>
+
+
+      <Footer/>
+
+
 
       <ScrollToTop/>
     </>
