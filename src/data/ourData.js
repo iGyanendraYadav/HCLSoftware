@@ -188,7 +188,7 @@ export const events = [
 
 export const accordionData = [
     {
-      title: "Section 1",
+      title: "Best Working Place Index",
       index: 1,
       content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
       laborum cupiditate possimus labore, hic temporibus velit dicta earum
@@ -196,7 +196,7 @@ export const accordionData = [
       voluptatem.`,
     },
     {
-      title: "Section 2",
+      title: "Best Service Provider Award",
       index: 2,
       content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
       reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
@@ -206,7 +206,7 @@ export const accordionData = [
       Repudiandae, mollitia id reprehenderit a ab odit!`,
     },
     {
-      title: "Section 3",
+      title: "United Counsil for Human Rights Award",
       index: 3,
       content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
       quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos

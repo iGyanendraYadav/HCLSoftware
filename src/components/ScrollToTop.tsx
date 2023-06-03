@@ -26,7 +26,7 @@ const ScrollToTop = (props: Props) => {
   return (
     <div className="relative">
       {showTopBtn && (
-        <span onClick={moveToTop} className="text-3xl lg:text-3xl text-indigo-600 fixed bottom-5 right-3  z-50">
+        <span onClick={moveToTop} className="text-3xl lg:text-3xl text-indigo-500 cursor-pointer fixed bottom-5 right-3  z-50">
           <BsFillArrowUpSquareFill />
         </span>
       )}

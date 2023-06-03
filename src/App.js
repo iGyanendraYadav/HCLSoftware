@@ -1,7 +1,6 @@
 import Header from "./components/Header.tsx";
 import CompOne from "./components/CompOne.tsx";
 import CompTwo from "./components/CompTwo.tsx";
-import Dummy from "./components/Dummy.tsx";
 import Awards from "./components/Awards.tsx";
 import { accordionData  } from "./data/ourData.js";
 import ScrollToTop from "./components/ScrollToTop.tsx";
@@ -15,8 +14,6 @@ function App() {
   <CompOne/>
   <CompTwo/>
 
-      <Dummy/>
-
       {/* Awards & Recognition */}
 
       <div className="bg-gradient-to-r from-[#000022] to-[#35bfe4] py-4 h-[820px] lg:h-[550px] ">
@@ -25,7 +22,7 @@ function App() {
             Awards & Recognition
           </h2>
 
-          <div className="flex flex-col justify-start items-start pt-0 pb-10 mx-5 lg:mx-12  text-white">
+          <div className="flex flex-col justify-start items-start pt-0 pb-0 mx-5 lg:mx-12  text-white">
 
 
           {accordionData.map(({ title, content }) => (
