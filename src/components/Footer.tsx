@@ -42,7 +42,7 @@ const Footer = (props: Props) => {
 
           <hr className='my-5 mx-12 lg:mx-24' />
 
-          <span className="text-sm flex justify-center">All rights reserved. &#64; 2023</span>
+          <span className="text-sm flex justify-center pb-10">All rights reserved. &#64; 2023</span>
       </div>
 
     </div>
